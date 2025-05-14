@@ -1,9 +1,3 @@
-import React from 'react'
-
 export default function Project() {
-  return (
-    <div className='bg-cradbg shadow-xl rounded-xl p-4'>
-        test
-    </div>
-  )
+  return <div className="bg-cradbg rounded-xl p-4 shadow-xl">test</div>;
 }
