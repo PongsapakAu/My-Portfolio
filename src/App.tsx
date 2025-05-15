@@ -1,6 +1,6 @@
 import About from "./components/about";
 import Navbar from "./components/navbar";
-import Project from "./components/project";
+import Project from "./components/ProjectShow/project";
 
 function App() {
   return (
