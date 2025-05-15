@@ -21,7 +21,7 @@ export default function Navbar() {
         </ul>
       </div>
 
-      <a
+      {/* <a
         href="/resume/Resume-Pongsapak-(Au).pdf"
         download
         className="rounded-md border border-black bg-black px-3 py-2 text-white hover:bg-white/40 hover:text-black"
@@ -29,7 +29,7 @@ export default function Navbar() {
         <p className="flex items-center justify-center gap-2 font-bold">
           Resume
         </p>
-      </a>
+      </a> */}
     </div>
   );
 }

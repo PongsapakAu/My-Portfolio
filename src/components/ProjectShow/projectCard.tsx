@@ -44,7 +44,7 @@ export function ProjectCard({
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-2 inline-block text-blue-500 underline"
+          className="mt-2 inline-block text-blue-500 underline hover:text-white/80"
         >
           View Project
         </a>
