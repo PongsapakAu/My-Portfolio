@@ -16,7 +16,7 @@ export default function About() {
         </div>
       </div>
       <img
-        src="/profile/raw.png"
+        src="/profile/profile.png"
         className="rounded-full border-4 border-cyan-400 object-cover shadow-md transition-transform duration-300 hover:scale-105 md:h-32 md:w-32 lg:h-64 lg:w-64"
         alt="Profile"
       />
