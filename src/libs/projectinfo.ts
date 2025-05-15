@@ -13,12 +13,12 @@ export const projectInfo = [
         image : "",
         link : "https://github.com/6410110338/front_mood.git",
     },
-    {
-        title : "",
-        description : "",
-        image : "",
-        link : "",
-    },
+    // {
+    //     title : "",
+    //     description : "",
+    //     image : "",
+    //     link : "",
+    // },
 ]
 
 export const Internship = [
