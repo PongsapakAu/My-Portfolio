@@ -1,4 +1,4 @@
-import { Description } from "../libs/resumeinfo";
+import { Descriptions } from "../libs/resumeinfo";
 
 export default function About() {
   return (
@@ -9,8 +9,8 @@ export default function About() {
         </p>
 
         <div className="space-y-4 text-lg text-[14px] leading-relaxed tracking-wide whitespace-pre-wrap">
-          {Description.map((item, index) => (
-            <p key={index}>{item.aboutMe}</p>
+          {Descriptions.map((Description, index) => (
+            <p key={index}>{Description.aboutMe}</p>
           ))}
         </div>
       </div>

@@ -1,4 +1,5 @@
 import { Internship, projectInfo } from "../../libs/projectinfo";
+import { Descriptions } from "../../libs/resumeinfo";
 import { ProjectCard } from "./projectCard";
 
 export default function Project() {
@@ -8,23 +9,9 @@ export default function Project() {
         Project
       </p>
       <p className="pb-4 text-[14px]">
-        This project is a comprehensive web-based application designed to
-        streamline the process of managing internship projects for students and
-        faculty members. It allows students to submit their project proposals,
-        receive feedback from supervisors, and track progress throughout the
-        internship period. The platform supports real-time communication between
-        students and advisors, including file uploads, comment threads, and
-        project timelines. Administrators can manage user roles, monitor project
-        statuses, and generate reports for academic evaluation. The system
-        integrates modern technologies such as React for the frontend and
-        Node.js with Express for the backend, ensuring a fast and responsive
-        user experience. Additionally, the platform is optimized for mobile
-        devices and includes notification features to keep all participants
-        updated on deadlines and changes. Security measures such as
-        authentication, authorization, and input validation are implemented to
-        protect user data and project integrity. This tool greatly improves the
-        efficiency and transparency of internship program management in
-        educational institutions.
+        {Descriptions.map((Description, index) => (
+          <p key={index}>{Description.project}</p>
+        ))}
       </p>
 
       <div className="grid grid-cols-3 gap-2">
