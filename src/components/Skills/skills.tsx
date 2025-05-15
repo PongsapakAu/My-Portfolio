@@ -1,4 +1,5 @@
 import { skillInfo } from "../../libs/skillinfo";
+import { SkillCard } from "./skillCard";
 
 export default function Skills() {
   return (
@@ -6,21 +7,13 @@ export default function Skills() {
       <p className="flex items-center justify-center pb-4 text-5xl font-bold uppercase">
         My Skills
       </p>
-      <div className="gap-4">
+      <div className="grid grid-cols-3 gap-3">
         {skillInfo.map((category, index) => (
-          <div key={index} className="mb-4">
-            <h3 className="text-lg font-semibold">{category.title}</h3>
-            <ul className="mt-2 flex flex-wrap gap-2">
-              {category.skills.map((skill, i) => (
-                <li
-                  key={i}
-                  className="rounded-full bg-gray-200 px-3 py-1 text-sm text-gray-800"
-                >
-                  {skill}
-                </li>
-              ))}
-            </ul>
-          </div>
+            <SkillCard 
+                key = {index}
+                title = {category.title}
+                skills={category.skills}
+            />
         ))}
       </div>
     </div>

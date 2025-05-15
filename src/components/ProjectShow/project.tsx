@@ -14,7 +14,7 @@ export default function Project() {
         ))}
       </p>
 
-      <div className="grid grid-cols-3 gap-2">
+      <div className="grid grid-cols-3 gap-3">
         {/* <div className="col-span-3"> */}
         {Internship.map((item, index) => (
           <ProjectCard

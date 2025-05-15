@@ -2,7 +2,7 @@ import { Descriptions } from "../libs/resumeinfo";
 
 export default function About() {
   return (
-    <div className="bg-cradbg flex items-center justify-center gap-12 rounded-xl p-8 text-white shadow-xl transition-all duration-500 md:flex-col xl:flex-row">
+    <div className="bg-cradbg/30 flex border-[0.5px] border-amber-50/20 items-center justify-center gap-12 rounded-xl p-8 text-white shadow-xl transition-all duration-500 md:flex-col xl:flex-row">
       <div className="flex max-w-2xl flex-col">
         <h1 className="relative flex items-center gap-4 pb-5 text-5xl font-bold uppercase">
           About Me

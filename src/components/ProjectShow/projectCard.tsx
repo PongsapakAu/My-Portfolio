@@ -15,7 +15,7 @@ export function ProjectCard({
   techStack,
 }: ProjectCardProps) {
   return (
-    <div className="rounded-lg border p-4 shadow-md">
+    <div className="rounded-lg border p-4 shadow-md duration-250 hover:scale-103 ">
       <h2 className="mb-4 text-xl font-semibold">{title}</h2>
       <p className="line-clamp-3 text-sm">
         {description || "No description provided."}
