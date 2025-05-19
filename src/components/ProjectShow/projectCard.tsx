@@ -15,7 +15,7 @@ export function ProjectCard({
   techStack,
 }: ProjectCardProps) {
   return (
-    <div className="rounded-lg border p-4 shadow-md duration-250 hover:scale-103 ">
+    <div className="rounded-lg border p-4 shadow-md duration-250 hover:scale-103">
       <h2 className="mb-4 text-xl font-semibold">{title}</h2>
       <p className="line-clamp-3 text-sm">
         {description || "No description provided."}
@@ -44,9 +44,22 @@ export function ProjectCard({
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-2 inline-block text-blue-500 underline hover:text-white/80"
+          className="group mt-4 inline-flex items-center gap-2 rounded-md border border-blue-500 bg-white px-4 py-2 text-sm font-medium text-blue-600 transition-all duration-300 hover:bg-blue-600 hover:text-white hover:shadow-md"
         >
           View Project
+          <svg
+            className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M17 8l4 4m0 0l-4 4m4-4H3"
+            />
+          </svg>
         </a>
       )}
     </div>
