@@ -1,10 +1,12 @@
 import About from "./components/about";
 import Container from "./components/container";
 import Education from "./components/education";
+import Experience from "./components/experience";
 import Navbar from "./components/navbar";
 import Profile from "./components/profile";
 import Project from "./components/ProjectShow/project";
 import Skills from "./components/Skills/skills";
+
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
         <Profile />
         <About />
         <Education />
+        <Experience />
         <Project />
         <Skills />
       </Container>

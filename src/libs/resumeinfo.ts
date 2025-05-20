@@ -28,3 +28,16 @@ export const education = [
   },
 
 ];
+
+export const Experiences = [
+  {
+    yearStart: "NOV 2024",
+    yearEnd: "MAR 2025",
+    title: "Internship",
+    company: "สหกรณ์ออมทรัพย์มหาวิทยาลัยสงขลานครินทร์ จำกัด",
+    position: "Front-End Developer",
+    description: "Worked as a Frontend Developer Intern, designing UI with Adobe XD and developing a responsive web application using Next.js, TypeScript, and Tailwind CSS. Integrated real-time data via APIs and collaborated with the team to enhance user experience and support the organization's digital transformation.",
+    tool : "Adobe XD",
+    techStack : ["Next.js", "TypeScript", "Tailwind CSS"],
+  },
+]
