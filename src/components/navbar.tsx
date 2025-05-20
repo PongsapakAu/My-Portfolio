@@ -12,7 +12,7 @@ export default function Navbar() {
             <li key={index}>
               <a
                 href={`#${navbar.toLowerCase().replace(/\s/g, "-")}`}
-                className="rounded-md hover:mx-2 hover:bg-gray-300 hover:px-4 hover:py-2 hover:text-gray-800"
+                className="rounded-md transition-all duration-200 hover:mx-2 hover:bg-gray-300 hover:px-4 hover:py-2 hover:text-gray-800"
               >
                 {navbar}
               </a>

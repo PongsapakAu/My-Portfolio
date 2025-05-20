@@ -1,5 +1,6 @@
 import About from "./components/about";
 import Container from "./components/container";
+import Education from "./components/education";
 import Navbar from "./components/navbar";
 import Profile from "./components/profile";
 import Project from "./components/ProjectShow/project";
@@ -13,6 +14,7 @@ function App() {
       <Container className="flex flex-col gap-4 py-4 pt-28">
         <Profile />
         <About />
+        <Education />
         <Project />
         <Skills />
       </Container>

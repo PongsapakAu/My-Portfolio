@@ -27,9 +27,4 @@ export const education = [
     branch: "Computer Engineering",
   },
 
-  {
-    yearStart: "",
-    yearEnd: "",
-    educationName: "",
-  },
 ];
