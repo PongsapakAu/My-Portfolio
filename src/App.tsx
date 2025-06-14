@@ -7,13 +7,13 @@ import Profile from "./components/profile";
 import Project from "./components/ProjectShow/project";
 import Skills from "./components/Skills/skills";
 
-
 function App() {
   return (
-    <div className="min-h-screen bg-blue-950 md:px-[200px] xl:px-82">
+    <div className="min-h-screen bg-gray-950 text-gray-300 font-sans scroll-smooth">
       <Navbar />
 
-      <Container className="flex flex-col gap-4 py-4 pt-28">
+      {/* ส่วนหลักของเนื้อหา */}
+      <Container className="flex flex-col gap-16 pt-28 pb-16 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <Profile />
         <About />
         <Education />
