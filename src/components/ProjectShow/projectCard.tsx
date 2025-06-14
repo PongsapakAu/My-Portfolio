@@ -1,5 +1,4 @@
 type ProjectCardProps = {
-  key: number;
   title: string;
   description: string;
   image: string;
@@ -15,36 +14,41 @@ export function ProjectCard({
   techStack,
 }: ProjectCardProps) {
   return (
-    <div className="rounded-lg border p-4 shadow-md duration-250 hover:scale-103">
-      <h2 className="mb-4 text-xl font-semibold">{title}</h2>
-      <p className="line-clamp-3 text-sm">
-        {description || "No description provided."}
-      </p>
-      {techStack && (
-        <div className="my-2 flex flex-wrap gap-2">
-          {techStack.map((tech, i) => (
-            <span
-              key={i}
-              className="rounded bg-blue-600 px-2 py-1 text-sm font-semibold"
-            >
-              {tech}
-            </span>
-          ))}
-        </div>
-      )}
+    <div className="flex flex-col justify-between rounded-xl border border-white/10 bg-white/5 p-4 shadow-lg backdrop-blur-sm transition-transform duration-300 hover:scale-[1.03] hover:shadow-xl">
+      <div>
+        <h2 className="mb-2 text-lg font-bold text-white">{title}</h2>
+        <p className="mb-4 text-sm text-white/80 line-clamp-3">
+          {description || "No description provided."}
+        </p>
+
+        {techStack && (
+          <div className="mb-4 flex flex-wrap gap-2">
+            {techStack.map((tech, i) => (
+              <span
+                key={i}
+                className="rounded-md bg-amber-400/20 px-2 py-1 text-xs font-medium text-amber-200"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+        )}
+      </div>
+
       {image && (
         <img
           src={image}
           alt={title}
-          className="my-2 h-[150px] w-full rounded-xl object-cover"
+          className="mb-4 w-full rounded-lg object-cover aspect-video"
         />
       )}
+
       {link && (
         <a
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className="group mt-4 inline-flex items-center gap-2 rounded-md border border-blue-500 bg-white px-4 py-2 text-sm font-medium text-blue-600 transition-all duration-300 hover:bg-blue-600 hover:text-white hover:shadow-md"
+          className="group mt-auto inline-flex w-fit items-center gap-2 rounded-md border border-amber-300 px-4 py-2 text-sm font-semibold text-amber-300 transition-all duration-300 hover:bg-amber-300 hover:text-black"
         >
           View Project
           <svg
