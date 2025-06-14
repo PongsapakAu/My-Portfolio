@@ -20,7 +20,6 @@ export default function Profile() {
           </div>
         </div>
 
-        {/* Profile Image */}
         <img
           src="/profile/profile.png"
           alt="Profile"
