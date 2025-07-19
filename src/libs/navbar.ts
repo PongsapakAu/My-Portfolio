@@ -1,1 +1,6 @@
-export const NavbarText = ["About", "Project", "Skill", "Contact"];
+export const NavbarText = [
+  { title: "About", path: "#about" },
+  { title: "Project", path: "#project" },
+  { title: "Skill", path: "#skill" },
+  { title: "Contact", path: "#contact" },
+];
