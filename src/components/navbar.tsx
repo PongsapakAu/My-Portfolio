@@ -41,13 +41,13 @@ export default function Navbar() {
       </ul>
 
       {menuOpen && (
-        <ul className="bg-cradbg/95 absolute top-full right-0 mt-3 flex w-full flex-col items-center gap-3 rounded-2xl border border-amber-400/50 p-5 text-white shadow-xl backdrop-blur-lg md:hidden">
+        <ul className="bg-cradbg/40 absolute top-full right-0 mt-3 flex w-full flex-col items-center gap-3 rounded-2xl border border-amber-400/50 p-5 text-white shadow-xl backdrop-blur-lg md:hidden">
           {NavbarText.map((navbar, index) => (
             <li key={index} className="w-full text-center">
               <a
                 href={navbar.path}
                 onClick={() => setMenuOpen(false)}
-                className="block rounded-lg px-6 py-3 font-semibold text-amber-300 transition-colors duration-300 hover:bg-amber-400 hover:text-black"
+                className="block rounded-lg px-6  py-3 font-semibold text-amber-300 transition-colors duration-300 hover:bg-amber-400 hover:text-black"
               >
                 {navbar.title}
               </a>
